@@ -1,0 +1,82 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apppartner.androidprogrammertest.LoginActivity"
+    android:id="@+id/login"
+    android:background="@drawable/bg_login">
+
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/include" />
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_back"
+
+        android:layout_margin="10dp"
+        android:id="@+id/btn_back"
+        android:onClick="onBackBtnClicked" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/textView2"
+        android:layout_toEndOf="@+id/btn_back"
+        android:layout_marginStart="57dp"
+
+        android:layout_alignBottom="@+id/btn_back"
+        android:textSize="11pt"
+        android:textColor="#ffffff"
+        android:textIsSelectable="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/usernametxt"
+        android:text="@string/txt_username"
+        android:layout_centerVertical="true"
+        android:background="@drawable/graphic_input"
+        android:layout_above="@+id/passwordtxt"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/loginPlaceholder" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/passwordtxt"
+        android:layout_centerVertical="true"
+        android:text="@string/txt_password"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/graphic_input"
+        android:textSize="@dimen/loginPlaceholder" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/passwordtxt"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+
+        android:background="@drawable/btn_login"
+        android:onClick="onLoginButtonClicked" />
+
+
+
+
+</RelativeLayout>

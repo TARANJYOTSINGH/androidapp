@@ -1,0 +1,7 @@
+<root>
+    <item
+        name='com.nostra13.universalimageloader.core.ImageLoader android.graphics.Bitmap loadImageSync(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull' />
+        <annotation name='java.lang.annotation.Deprecated' />
+    </item>
+</root>

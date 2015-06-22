@@ -1,0 +1,84 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apppartner.androidprogrammertest.AnimationActivity"
+    android:background="@color/primary_material_dark"
+    android:id="@+id/animation">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/include2" />
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_back"
+
+        android:layout_margin="10dp"
+        android:id="@+id/btn_back"
+        android:onClick="onBackBtnClicked" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animations"
+        android:id="@+id/textView2"
+        android:layout_toEndOf="@+id/btn_back"
+        android:layout_marginStart="57dp"
+
+        android:layout_alignBottom="@+id/btn_back"
+        android:textSize="11pt"
+        android:textColor="#ffffff"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/txt_animation"
+        android:layout_below="@+id/include2"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+         android:layout_marginTop="30dp"
+          android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="@dimen/animation_prompt"
+        android:layout_alignBottom="@+id/imageView"
+        android:text="Animate the app Partner icon.Make it fade to 0% alpha and then to 100% alpha when the fade button is pressed. Allow it to be dragged around the screen by touching and dragging." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_animation_bonus"
+        android:id="@+id/txt_animation_bonus"
+
+        android:textStyle="bold"
+        android:textSize="@dimen/animation_bonus"
+        android:layout_toEndOf="@+id/btn_back"
+        android:layout_above="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_apppartner"
+        android:layout_above="@+id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:background="@drawable/btn_fade"
+        android:paddingTop="20dp"
+        android:onClick="onFadeButtonClicked"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView" />
+
+
+
+</RelativeLayout>
